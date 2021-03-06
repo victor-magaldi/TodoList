@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {
@@ -9,7 +10,17 @@ class Header extends Component {
     return (
       <div>
         <header>
-          <h1>oláaaaaas</h1>
+          <ul>
+            <li>
+              <Link to="/todo-list">Todo List</Link>
+            </li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/sobre">Sobre</Link>
+            </li>
+          </ul>
         </header>
       </div>
     );

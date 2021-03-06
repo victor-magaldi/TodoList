@@ -5,9 +5,13 @@ import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Todolist from "./components/TodoList";
 
-const Routes = () => {
+import Header from "./components/Header";
+
+const Routes = ({ children }) => {
+  console.log(children);
   return (
     <BrowserRouter>
+      <Header></Header>
       <Switch>
         {/* o exact vai garantir que home seja acessada só quando for exatamento o path */}
         <Route exact path="/" component={Home} />
