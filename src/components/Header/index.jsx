@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+import "./styles.css";
+
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -8,8 +10,8 @@ class Header extends Component {
   }
   render() {
     return (
-      <div>
-        <header>
+      <>
+        <header className="header">
           <ul>
             <li>
               <Link to="/todo-list">Todo List</Link>
@@ -22,7 +24,7 @@ class Header extends Component {
             </li>
           </ul>
         </header>
-      </div>
+      </>
     );
   }
 }
