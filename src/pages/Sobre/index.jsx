@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import "./styles.css";
+
 class Sobre extends Component {
   constructor(props) {
     super(props);
